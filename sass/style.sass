@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,900')
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active
+  position: fixed
+  font-family: "Montserrat"
+  transform: rotate(-90deg)
+  transform-origin: 0 0
+  left: 40px
+  bottom: 0px
+  font-size: 12px
+  text-decoration: none
+  background: #f7f7f7
+  padding: 4px 8px
+  z-index: 10
+  color: #3B425A
+  &:hover
+    background: #7B46FE
+    color: #FDFA75
+
+body
+  background: #32384f
+  padding: 0
+  margin: 0
+  color: #FFF
+h1
+  font-size: 56px
+  font-weight: 400
+  color: #7045ff
+  position: relative
+  &:after
+    content: ""
+    padding-bottom: 30px
+    display: block
+    border-bottom: 1px solid rgba(70,76,99,1)
+    width: 60%
+h2
+  font-size: 36px
+  font-weight: 100
+  color: #83ffe1
+  position: relative
+ 
+    
+img
+  max-width: 100%
+.timeline
+  margin: 0
+  padding: 0
+  list-style: none
+  position: fixed
+  left: 100px
+  top: 5%
+  width: 1px
+  height: 90%
+  background: rgba(70,76,99,1)
+  .bar
+    position: absolute
+    width: 1px
+    background-color: #fcf769
+    top: 0
+    left: 0
+    z-index: 0
+.container
+  padding-left: 200px
+section
+  border-top: 2px solid #fcf769
+  padding: 20px
+  font-size: 16px
+  font-weight: 200
+  font-family: "Montserrat"
+
+p
+  line-height: 2
+
+.node
+  position: absolute
+  width: 3px
+  height: 3px
+  background: #FFF
+  left: -1px
+  z-index: 1
+  cursor: pointer
+  border-radius: 3px
+  
+  &:hover
+    background: #46ffdd
+    span
+      opacity: 1
+    
+  
+  &:before
+    content: ""
+    position: absolute
+    width: 9px
+    height: 9px
+    left: -3px
+    top: -3px
+  
+  span
+    transition: all .4s ease-out
+    text-transform: uppercase
+    right: 4px
+    top: -16px
+    color: #FFFFFF
+    position: absolute
+    padding: 10px
+    white-space: nowrap
+    font-size: 10px
+    font-weight: 200
+    font-family: "Montserrat"
+    opacity: 0
+    
+    
+      
