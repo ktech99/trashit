@@ -19,7 +19,7 @@ a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white
 }
 
 body {
-  background: #000026;
+  background: #fcfcfc;
   padding: 0;
   margin: 0;
   color: #FFF;
@@ -28,7 +28,7 @@ body {
 h1 {
   font-size: 70px;
   font-weight: 400;
-  color: #7045ff;
+  color: grey;
   position: relative;
 }
 h1:after {
@@ -43,7 +43,7 @@ h1:after {
 h2 {
   font-size: 36px;
   font-weight: 200;
-  color: #83ffe1;
+  color: black;
   position: relative;
 }
 
@@ -60,23 +60,23 @@ img {
   top: 5%;
   width: 1px;
   height: 90%;
-  background: #464c63;
+  background: black;
 }
 .timeline .bar {
   position: absolute;
-  width: 1px;
-  background-color: #fcf769;
+  width: 2px;
+  background-color: red;
   top: 0;
   left: 0;
   z-index: 0;
 }
 
 .container {
-  padding-left: 200px;
+  padding-left: 150px;
 }
 
 section {
-  border-top: 2px solid #fcf769;
+  border-top: 2px solid grey;
   padding: 20px;
   font-size: 16px;
   font-weight: 200;
@@ -91,14 +91,14 @@ p {
   position: absolute;
   width: 3px;
   height: 3px;
-  background: #FFF;
+  background: black;
   left: -1px;
   z-index: 1;
   cursor: pointer;
   border-radius: 3px;
 }
 .node:hover {
-  background: #46ffdd;
+  background: red;
 }
 .node:hover span {
   opacity: 1;
