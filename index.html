@@ -1,87 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trash-It</title>
-
-  <link rel="stylesheet" href="css/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-
-<body>
-
-
-  <ul class="timeline">
-    <li class="bar"></li>
-  </ul>
-  <div class="container">
-    <section data-name="Home">
-      <h1 style = "text-align:center">Trash-It</h1>
-      <h2>Classifying trash using machine learning</h2>
-      <h2 style = "color:red">Working towards a sustainable future</h2>
-      <h2>All in the palms of your hand</h2>
-      <h2 style = "text-align:center"><img src= "mockup.png" width = "300px" height="auto" style="margin:50px"></img><img src= "mockup3.png" width = "300px" height="auto" style="margin:50px"></img></h2>
-      <a href ="https://itunes.apple.com/us/app/trash-it/id1392645345?ls=1&mt=8"><h2 style = "text-align:center"><img src= "appStoreButton.png" width = "200px" height="auto" ></img></h2></a>
-
-
-      <h2>Our slogan: Trash me outside how bout dat</h2>
-    </section>
-
-    <section data-name="How it works">
-      <h1>How it works</h1>
-      <h2>1. You take a photo of the object</h2>
-      <br>
-      <h2><s>2. The app sends the image to one of our engineers who Google's the answer</s></h2>
-      <br>
-      <h2>2.  The app uses machine learning data to classify your object</h2>
-      <h2 style = "text-align:left"><img src= "mockup2.png" width = "300px" height="auto" ></img></h2>
-
-    </section>
-
-    <section data-name="FAQ">
-      <h1>FAQ</h1>
-      <h2>1. I think the app classified an object incorrectly and it deeply hurt my feelings</h2>
-      <h2 style = "color:red">Ans. Shoot me an email with what the product was and what it was classified as.</h2>
-      <br>
-      <h2>2. The app classified me as trash.</h2>
-      <h2 style = "color:red">Ans. Maybe the app isn't wrong?</h2>
-      <br>
-      <h2>3. How can I improve the accuracy?</h2>
-      <h2 style = "color:red">Ans. Take photos of objects one at a time with good lighting and take photos from an angle in which the object is in its most identifiable form</h2>
-    </section>
-    <section data-name="The inspiration">
-
-      <h1>The inspiration</h1>
-      <h2>Have you ever had something to throw, and <s>thrown it in the landfill dustbin because who cares</s><br> not known if it's recyclable, compost, or trash?</h2>
-      <br>
-      <h2>I faced the same problem! I was eating <s>a pizza</s> salad, and I didn't know where to throw the bowl.<br> I solved this by doing <s>eenie meenie miney mo</s>
-        a google search of it.</h2>
-        <br>
-      <h2>I was further supported by my peers, the HuskyTech community and my mentor James Webster, who helped me find the resources to complete this project.</h2>
-        </section>
-    <section data-name="Contact/About Me">
-      <h1>Contact/About Me</h1>
-      <h2>Feel free to contact me with any questions at <u>kartikarora99@gmail.com</u></h2>
-      <br>
-      <h2>You can find my github at <a href = "https://github.com/ktech99">github.com/ktech99</a></h2>
-      <br>
-      <h2>I am a student at the University of Washington, who loves working on projects in my free time</h2>
-
-    </section>
-
-
-
+<body class="is-boxed has-animations">
+  <div class="body-wrap boxed-container">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-inner">
+          <div class="brand header-brand">
+            <h1 class="m-0">
+              <a href="#">
+                <img class="header-logo-image asset-light" src="dist/images/logo-light.svg" alt="Logo">
+                <img class="header-logo-image asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
+              </a>
+            </h1>
+          </div>
+        </div>
       </div>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <h1 class="hero-title mt-0">Trash-It</h1>
+              <p class="hero-paragraph">Sustainability in the palm of your hands</p>
+              <div class="hero-cta">
+                <a class="button button-primary" href="https://itunes.apple.com/us/app/trash-it/id1392645345?ls=1&mt=8">Download Now</a>
+                <div class="lights-toggle">
+                  <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch" checked="checked">
+                  <label for="lights-toggle" class="text-xs"><span>Turn me <span class="label-text">dark</span></span></label>
+                </div>
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="header-illustration">
+                <img class="header-illustration-image asset-light" src="dist/images/header-illustration-light.svg" alt="Header illustration">
+                <img class="header-illustration-image asset-dark" src="dist/images/header-illustration-dark.svg" alt="Header illustration">
+              </div>
+              <div class="hero-media-illustration">
+                <img class="hero-media-illustration-image asset-light" src="dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                <img class="hero-media-illustration-image asset-dark" src="dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+              </div>
+              <div class="hero-media-container">
+                <img class="hero-media-image asset-light" src="src\images\logo.png" alt="Hero media" height=200px width="auto">
+                <img class="hero-media-image asset-dark" src="src\images\logo.png" alt="Hero media">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section">
+        <div class="container">
+          <div class="features-inner section-inner has-bottom-divider">
+            <div class="features-header text-center">
+              <div class="container-sm">
+                <h2 class="section-title mt-0">How it works</h2>
+                <p class="section-paragraph">The details behind our state of the art app</p>
+                <img src="src\images\iphone1.png" alt="Feature box" width="100%" style="text-align:center">
+                <br>
+              </div>
+            </div>
+            <div class="features-wrap">
+              <div class="feature is-revealing">
+                <div class="feature-inner">
+                  <div class="feature-icon">
+                    <img class="asset-light" src="dist/images/feature-01-light.svg" alt="Feature 01">
+                    <img class="asset-dark" src="dist/images/feature-01-dark.svg" alt="Feature 01">
+                  </div>
+                  <div class="feature-content">
+                    <h3 class="feature-title mt-0">Capture</h3>
+                    <p class="text-sm mb-0">You take a photo of the object.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feature is-revealing">
+                <div class="feature-inner">
+                  <div class="feature-icon">
+                    <img class="asset-light" src="dist/images/feature-02-light.svg" alt="Feature 02">
+                    <img class="asset-dark" src="dist/images/feature-02-dark.svg" alt="Feature 02">
+                  </div>
+                  <div class="feature-content">
+                    <h3 class="feature-title mt-0">Classify</h3>
+                    <p class="text-sm mb-0"><strike>The app sends the image to one of our engineers who Google's the answer</strike><br>
+                      The app uses machine learning data to classify your object
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section >
+        <div class="container-sm">
+          <div class="cta-inner section-inner">
+            <div class="cta-header text-center">
+              <h1 class="section-title mt-0">Inspiration</h2>
+                <p>Have you ever had something to throw, and <s>thrown it in the landfill dustbin because who cares</s><br> not known if it's recyclable, compost, or trash?</p>
+                <br>
+                <p>I faced the same problem! I was eating <s>a pizza</s> salad, and I didn't know where to throw the bowl.<br> I solved this by doing <s>eenie meenie miney mo</s>
+                  a google search of it.</p>
+                  <br>
+                  <p>I was further supported by my peers, the HuskyTech community and my mentor James Webster, who helped me find the resources to complete this project.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+
+          <section class="cta section">
+            <div class="container-sm">
+              <div class="cta-inner section-inner">
+                <div class="cta-header text-center">
+                  <h1 class="section-title mt-0">FAQ</h2>
+                    <p>1. I think the app classified an object incorrectly and it deeply hurt my feelings</p>
+                    <p style = "color:red">Ans. Shoot me an email with what the product was and what it was classified as.</p>
+                    <br>
+                    <p>2. The app classified me as trash.</p>
+                    <p style = "color:red">Ans. Maybe the app isn't wrong?</p>
+                    <br>
+                    <p>3. How can I improve the accuracy?</p>
+                    <p style = "color:red">Ans. Take photos of objects one at a time with good lighting and take photos from an angle in which the object is in its most identifiable form</p>
+                    <div class="cta-cta">
+                      <a class="button button-primary" href="https://itunes.apple.com/us/app/trash-it/id1392645345?ls=1&mt=8">Download Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
 
 
+        </div>
 
-      <script  src="js/index.js"></script>
+        <script src="dist/js/main.min.js"></script>
+      </body>
+      </html>
 
 
+      <!--
+      Have you ever had something to throw, and thrown it in the landfill dustbin because who cares
+      not known if it's recyclable, compost, or trash?
 
+      I faced the same problem! I was eating a pizza salad, and I didn't know where to throw the bowl.
+      I solved this by doing eenie meenie miney mo a google search of it.
 
-    </body>
-
-    </html>
+      I was further supported by my peers, the HuskyTech community and my mentor James Webster, who helped me find the resources to complete this project.
+    -->
